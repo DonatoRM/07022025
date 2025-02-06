@@ -1,14 +1,15 @@
 # Enunciado
 
-* Crear una galería de imágenes interactiva que permita filtrar las imágenes por categorías y visualizarlas en un modal con funcionalidad de navegación.
+Crear una galería de imágenes interactiva que permita filtrar las imágenes por categorías y visualizarlas en un modal con funcionalidad de navegación.
 * Crear una página web con un título ("**Galería con Filtros**").
 * Añadir botones de filtro para las categorías: "**Toda**s", "**Naturaleza**", "**Ciudad**" y "**Animales**".
 * Crear un contenedor para la galería de imágenes.
 * Implementar un modal que muestre la imagen seleccionada en tamaño completo.
-* Usar un array de objetos para almacenar las imágenes. Cada objeto debe contener:
 
-1. **src**: URL de la imagen (puedes usar https://picsum.photos/).
-2. **category**: Categoría de la imagen (nature, city, animals).
+Usar un array de objetos para almacenar las imágenes. Cada objeto debe contener:
+
+  * **src**: URL de la imagen (puedes usar https://picsum.photos/).
+  * **category**: Categoría de la imagen (nature, city, animals).
 
 * Al hacer clic en un botón de filtro, mostrar solo las imágenes de la categoría seleccionada.
 * El botón de la categoría seleccionada debe resaltarse (por ejemplo, cambiando su color de fondo).
@@ -20,14 +21,12 @@
 * Diseñar una interfaz atractiva y responsive.
 * Asegurarse de que la galería se vea bien en dispositivos móviles y de escritorio.
 * Estilizar el modal para que se vea profesional (fondo oscuro semitransparente, imagen centrada, etc.).
-
-
-## Pistas
 * Usar un bucle (for, forEach, etc.) para generar dinámicamente las imágenes en la galería.
 * Usar otro bucle para agregar eventos a los botones de filtro.
 * Usar condicionales (if, else if, else) para filtrar las imágenes según la categoría seleccionada.
 * Usar condicionales para manejar la navegación entre imágenes en el modal (por ejemplo, si el índice llega al final, volver al principio).
-* Asignar eventos click a los botones de filtro, las imágenes y los botones de navegación del modal.
+
+Asignar eventos click a los botones de filtro, las imágenes y los botones de navegación del modal.
 * Crear funciones para:
 * Generar la galería.
 * Filtrar las imágenes.
@@ -52,7 +51,9 @@ const images = [
 * Estilos para la galería, los botones de filtro y el modal.
 * Lógica para generar la galería, filtrar imágenes y manejar el modal.
 * Una galería funcional que permita filtrar imágenes por categoría y verlas en un modal con navegación.
-Usa console.log para depurar tu código y verificar que las funciones se ejecuten correctamente.
+
+Usa *console.log* para depurar tu código y verificar que las funciones se ejecuten correctamente.
 
 Prueba tu código en diferentes dispositivos para asegurarte de que sea responsive.
+
 Personaliza los estilos para que la galería se vea atractiva.
