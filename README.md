@@ -2,7 +2,7 @@
 
 Crear una galería de imágenes interactiva que permita filtrar las imágenes por categorías y visualizarlas en un modal con funcionalidad de navegación.
 * Crear una página web con un título ("**Galería con Filtros**").
-* Añadir botones de filtro para las categorías: "**Toda**s", "**Naturaleza**", "**Ciudad**" y "**Animales**".
+* Añadir botones de filtro para las categorías: "**Todas**", "**Naturaleza**", "**Ciudad**" y "**Animales**".
 * Crear un contenedor para la galería de imágenes.
 * Implementar un modal que muestre la imagen seleccionada en tamaño completo.
 
@@ -45,8 +45,9 @@ const images = [
 { src: "https://picsum.photos/400/300?image=9&quot;, category: "animals" }
 ];:
 ```
-## Estructura básica de la página.
-* Botones de filtro y contenedor de la galería.
+
+Botones de filtro y contenedor de la galería.
+
 * Modal con botones de navegación y cierre.
 * Estilos para la galería, los botones de filtro y el modal.
 * Lógica para generar la galería, filtrar imágenes y manejar el modal.
