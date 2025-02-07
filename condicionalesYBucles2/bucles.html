@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Donato Ramos Martínez" />
+        <meta name="description" content="Bucles 2" />
+        <meta name="keywords" content="html,css,javascript" />
+        <title>Lista de números</title>
+    </head>
+    <body>
+        <!-- Crear una lista dinámica con número pares
+    Crea una lista DOM que muestra los número pares del 1 al 20
+    -->
+
+        <h1>Número pares del 1 al 20</h1>
+        <ul id="lista"></ul>
+        <!-- Contenedor de la lista -->
+    </body>
+    <script>
+        // Paso 1: Acceder al elemento DOM
+        const lista = document.getElementById('lista');
+        // Paso 2: Usar un bucle for para iterar del 1 al 20
+        for (let i = 0; i < 20; i++) {
+            // Paso 3: Verificamos si el número es par
+            if (i % 2 === 0) {
+                // Crea el elemento nuevo li
+                const item = document.createElement('li');
+                // Paso 5: Asignar el número par como contenido del li
+                item.textContent = i;
+                // Paso 6: Agregar el li a la lista ul
+                lista.appendChild(item);
+            }
+        }
+    </script>
+</html>
