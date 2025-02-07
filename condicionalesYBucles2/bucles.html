@@ -32,6 +32,11 @@
                 }
             }
         </script>
+        <div class="start" data-value="1">&#x2605;</div>
+        <div class="start" data-value="2">&#x2605;</div>
+        <div class="start" data-value="3">&#x2605;</div>
+        <div class="start" data-value="4">&#x2605;</div>
+        <div class="start" data-value="5">&#x2605;</div>
         <!-- forEach
         iterar (recorrer) sobre los elementos de un array o una lista de nodos.
         Sintaxis de forEach
@@ -44,6 +49,12 @@
             const numeros = [1, 2, 3, 4, 5, 6, 7];
             numeros.forEach(function (numero) {
                 console.log(numero);
+            });
+            // forEach para recorrer una lista de nodos
+            const starts = document.querySelectorAll('start');
+            starts.forEach(start => {
+                const value = this.getAttribute('data-value');
+                console.log(`Valoración: ${value} estrellas`);
             });
         </script>
     </body>
