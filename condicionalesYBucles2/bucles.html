@@ -16,21 +16,35 @@
         <h1>Número pares del 1 al 20</h1>
         <ul id="lista"></ul>
         <!-- Contenedor de la lista -->
-    </body>
-    <script>
-        // Paso 1: Acceder al elemento DOM
-        const lista = document.getElementById('lista');
-        // Paso 2: Usar un bucle for para iterar del 1 al 20
-        for (let i = 0; i < 20; i++) {
-            // Paso 3: Verificamos si el número es par
-            if (i % 2 === 0) {
-                // Crea el elemento nuevo li
-                const item = document.createElement('li');
-                // Paso 5: Asignar el número par como contenido del li
-                item.textContent = i;
-                // Paso 6: Agregar el li a la lista ul
-                lista.appendChild(item);
+        <script>
+            // Paso 1: Acceder al elemento DOM
+            const lista = document.getElementById('lista');
+            // Paso 2: Usar un bucle for para iterar del 1 al 20
+            for (let i = 0; i < 20; i++) {
+                // Paso 3: Verificamos si el número es par
+                if (i % 2 === 0) {
+                    // Crea el elemento nuevo li
+                    const item = document.createElement('li');
+                    // Paso 5: Asignar el número par como contenido del li
+                    item.textContent = i;
+                    // Paso 6: Agregar el li a la lista ul
+                    lista.appendChild(item);
+                }
             }
-        }
-    </script>
+        </script>
+        <!-- forEach
+        iterar (recorrer) sobre los elementos de un array o una lista de nodos.
+        Sintaxis de forEach
+        array.forEach(function(elemento,índice,arrayCompleto)) {
+            Código a ejecutar para cada elemento
+        } 
+        -->
+        <!-- Array de número y queremos imprimir cada número en la consola -->
+        <script>
+            const numeros = [1, 2, 3, 4, 5, 6, 7];
+            numeros.forEach(function (numero) {
+                console.log(numero);
+            });
+        </script>
+    </body>
 </html>
